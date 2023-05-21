@@ -1,0 +1,31 @@
+## Hibernate
+- [Hibernate](https://hibernate.org/orm/)
+  - Object/Relational Mapping (ORM)
+  - Object States:
+    - Transient, Persistent, Detached
+  - Hibernate API Interfaces/Classes:
+    - Configuration:
+      - hibernate.cfg.xml
+        - Properties:
+          - Driver, credentials
+          - Dialect
+          - hbm2ddl
+        - Mapping files/classes
+          - hbm.xml
+      - [Java Persistance API annotations:](https://docs.oracle.com/javaee/6/tutorial/doc/bnbpz.html)
+        - @Entity, @Table, @Id, @Column
+        - @OneToOne, @OneToMany, @ManyToMany, @JoinColumn
+      - SessionFactory
+        - [Level 2 cacheing](https://www.ehcache.org/)
+      - Session
+        - Level 1 (default) cacheing
+        - save/persist
+        - get/load
+        - update/merge
+        - Transaction
+        - Query
+          - HQL, Native SQL, named queries
+        - Criteria
+          - Criterion:
+            - Restrictions
+            - OrderBy

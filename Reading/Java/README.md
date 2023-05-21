@@ -1,0 +1,136 @@
+## Java Features
+- [Java Features](https://docs.oracle.com/javase/specs/jls/se8/html/jls-1.html)
+  - [Platform Independence: Write Once, Run Anywhere](https://woz-u.com/blog/what-is-wora-in-java/)
+  - Verbose, Clear Syntax
+  - [Garbage Collection](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)
+    - [Finalize](https://www.baeldung.com/java-finalize)
+  - [Multithreading](https://www.geeksforgeeks.org/multithreading-in-java/)
+
+## OOP
+- [Object Oriented Programming](https://www.w3schools.com/java/java_oop.asp)
+  - [Polymorphism](https://www.baeldung.com/java-polymorphism)
+    - [Dynamic Binding](https://www.baeldung.com/java-static-dynamic-binding)
+    - [Overloading](https://www.programiz.com/java-programming/method-overloading)
+    - [Overriding](https://www.baeldung.com/java-method-overload-override#method-overriding:~:text=3.%20Method%20Overriding)
+  - [Encapsulation](https://www.javatpoint.com/encapsulation)
+    - [Access Modifiers](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
+  - [Inheritance](https://www.baeldung.com/java-inheritance)
+    - `extends`
+    - `implements`
+  - [Abstraction](https://howtodoinjava.com/java/oops/understanding-abstraction-in-java/)
+    - [Interfaces](https://www.baeldung.com/java-interfaces)
+    - [Abstract Classes](https://www.baeldung.com/java-abstract-class)
+
+## Tools
+- Tools
+  - [JVM](https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-0-preface8.html)
+    - [JRE vs JDK](https://www.ibm.com/cloud/blog/jvm-vs-jre-vs-jdk)
+    - [Stack vs Heap](https://www.baeldung.com/java-stack-heap)
+    - [`public static void main(String[] args)`](https://www.geeksforgeeks.org/java-main-method-public-static-void-main-string-args/)
+  - [Maven](https://maven.apache.org/what-is-maven.html)
+    - Project management
+    - Dependency management
+    - Lifecycle
+    - POM
+
+## Java Syntax
+- [Syntax](https://www.tutorialspoint.com/java/index.htm)
+  - [Constructors, Methods, and Fields](https://cs.colby.edu/courses/S18/cs231/notes/outlines02.pdf)
+  - [Variable Scopes](https://www.geeksforgeeks.org/variable-scope-in-java/)
+    - class/static
+    - method/parameter
+    - local/block
+  - Control Statements: 
+    - `if`
+    - `if else`
+    - `else`
+    - `while`
+    - `do-while`
+    - `for`
+    - `for-each`
+    - `switch`
+  - Arrays, varargs
+  - Package & Import
+  - Access Modfiers
+  - [Non-Access Modifiers](https://www.geeksforgeeks.org/non-access-modifiers-in-java/)
+  - Primitive Types: 
+    - `byte`
+    - `short`
+    - `int`
+    - `long`
+    - `char`
+    - `boolean`
+    - `float`
+    - `double`
+  - Reference Types:
+    - `class`
+    - `enum`
+    - `interface`
+    - `array`
+  - Exception Handling
+    - try/catch/finally
+    - try-with-resources
+    - Checked vs Unchecked Exceptions
+  - Method Overloading and Overriding
+  - Interfaces
+    - Functional & Marker Interfaces
+    - Default fields & methods
+  - Abstract Class
+  - Anonymous Class
+  - Lambdas
+  - Generics
+
+## Standard Java Library
+- Standard Library
+  - [Object API](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html)
+    - `toString()`
+    - `hashcode()`
+    - `equals()`
+  - [String API](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html)
+    - String immutability
+    - StringBuilder vs StringBuffer
+    - String Pool
+  - `Wrapper Classes`(https://www.baeldung.com/java-wrapper-classes)
+  - [Reflection API](https://www.baeldung.com/java-reflection)
+  - IO
+    - InputStream and OutputStream
+    - Reader and Writer
+    - BufferedReader and BufferedWriter
+    - Scanner
+  - Serialization
+  - [Collection API](https://dzone.com/articles/an-introduction-to-the-java-collections-framework)
+    - collection vs. Collection vs. Collections
+    - Map
+      - Hashtable
+      - HashMap
+    - List, Set, Queue, Deque
+      - ArrayList, TreeSet
+    - Iterable vs Iterator
+    - Comparable vs Comparator
+  - [Thread API](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html)
+    - Runnable interface vs Thread class
+    - Synchronized
+    - States of Threads
+    - Thread Methods
+    - Deadlock/Starvation
+    - Producer/Consumer Problem
+
+## Java Testing
+- [Testing](https://www.softwaretestingmaterial.com/software-testing/)
+  - Levels of Testing
+    - Unit Tests
+    - Integration Tests
+    - System Tests
+    - Acceptance Tests
+  - [TDD](https://hackernoon.com/introduction-to-test-driven-development-tdd-61a13bc92d92)
+    - Red/Green Testing
+  - [JUnit5](https://www.baeldung.com/junit-5)
+    - Assert Methods
+    - Annotations
+  - [Mockito](https://site.mockito.org/)
+    - Mock Objects
+
+## Design Patterns
+- [Design patterns](https://www.javatpoint.com/design-patterns-in-java)
+  - Singleton
+  - Factory
