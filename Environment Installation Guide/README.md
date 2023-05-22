@@ -12,7 +12,7 @@
 The following technologies are required in order to complete this phase of the program:
 
 - **Git**: We'll be using Git as a version control tool during the course of this program. Not only will you use Git to track changes to your projects, but you'll also use it to collaborate with your trainer and with your fellow associates. (**install Git manually**)
-- **Java SE Development Kit 17**: We will be utilizing Java 8 as our primary language for the duration of the program. This software development kit will provide the compiler and runtime environment needed to quickly and efficiently develop Java applications.
+- **Java SE Development Kit 11**: We will be utilizing Java 8 as our primary language for the duration of the program. JDK11 is what is required for Spring and so the development kit is required to be higher, but we will only be utlizing features from Java 8. This software development kit will provide the compiler and runtime environment needed to quickly and efficiently develop Java applications.
 - **Apache Maven**: Maven is a software project management and build automation tool. We will use it to manage our projects' builds as it provides dependency management and streamlines several aspects of the testing life cycle.
 - **DBeaver**: DBeaver is a free, open source universal database tool that is compatible with several external data sources, PostgreSQL included. We'll use DBeaver in order to modify our databases and persist data using a simple user interface provided to us by the tool.
 - **Postman**: Postman is used for testing RESTful APIs. We'll use it to set up collections of tests for the RESTful APIs we design throughout the program. It can also be used to quickly test a single endpoint.
