@@ -1,0 +1,17 @@
+<!-- String interpolation -->
+<h3>Your message is: {{message}}</h3>
+
+<!-- Property Binding -->
+<img [src]="imageUrl"/>
+<img [src]="imageUrl2"/>
+
+<!-- Event Binding -->
+<button (click)="handleButtonClick()">Click Me</button>
+
+<!-- Button Event Example -->
+<button (click)="toggleCatPicture()">Toggle Cat Picture</button>
+<img [src]="catUrl"/>
+
+<!-- Two Way data binding with NgModel-->
+<h1>Hello there: {{name}}</h1>
+<input type="text" [(ngModel)]="name"/>
