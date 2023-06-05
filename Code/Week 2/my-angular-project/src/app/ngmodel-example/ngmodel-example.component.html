@@ -1,0 +1,23 @@
+<h2>Registration</h2>
+<input type="text" [(ngModel)]="username">
+<div *ngIf="username.length < 3 || username.length > 10; else validUsername">
+    {{username}} is not valid
+</div>
+<ng-template #validUsername>
+    <div>
+        {{username}} is valid
+    </div>
+</ng-template>
+<br>
+<input type="text" [(ngModel)]="password">
+<div *ngIf="password.length < 3; else validPassword">
+    The password is not long enough, add more characters
+</div>
+<ng-template #validPassword>
+    <div>
+        password is valid
+    </div>
+</ng-template>
+<br>
+<button (click)="sendInformation()">Login</button>
+<button (click)="resetInformation()">Reset</button>

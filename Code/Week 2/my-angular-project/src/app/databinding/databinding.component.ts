@@ -14,7 +14,7 @@ export class DatabindingComponent {
   catUrl: string = this.imageUrl;
   toggleCat: boolean = true;
 
-  name: string = "Greg";
+  name: string = "Jim";
 
   handleButtonClick(){
     alert("I have been clicked");

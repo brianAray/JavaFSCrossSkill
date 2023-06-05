@@ -1,0 +1,37 @@
+<p>structural-directives works!</p>
+
+<!-- *ngIf -->
+<button (click)="toggleButtonClick()">Toggle Visibility</button>
+<div *ngIf="toggleButton">{{message}}</div>
+
+<!-- *ngFor -->
+<!-- Hard coding example -->
+<ul>
+    <li>{{namesArray[0]}}</li>
+    <li>{{namesArray[1]}}</li>
+    <li>{{namesArray[2]}}</li>
+    <li>{{namesArray[3]}}</li>
+    <li>{{namesArray[4]}}</li>
+</ul>
+
+<ol>
+    <li *ngFor="let name of namesArray">{{name}}</li>
+</ol>
+
+<!-- *ngSwitch -->
+<div [ngSwitch]="daysOfTheWeek[0]">
+    <p *ngSwitchCase="0">Sunday</p>
+    <p *ngSwitchCase="1">Monday</p>
+    <p *ngSwitchCase="2">Tuesday</p>
+    <p *ngSwitchCase="3">Wednesday</p>
+    <p *ngSwitchCase="4">Thursday</p>
+    <p *ngSwitchCase="5">Friday</p>
+    <p *ngSwitchCase="6">Saturday</p>
+    <p *ngSwitchDefault>Invalid Day of the Week Chosen!</p>
+</div>
+
+
+<button (click)="displaySampleClick()">Display Sample Component</button>
+<div *ngIf="displaySample">
+    <sample></sample>
+</div>

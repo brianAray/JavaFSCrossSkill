@@ -1,0 +1,11 @@
+<div 
+    [ngClass]="{'highlight': isHighlighted, 'error': hasError}" 
+    (mouseover)="highlightToggle()"
+    (mouseleave)="highlightToggle()">
+    This div has dynamic styles being applied
+</div>
+
+<button 
+    [ngStyle]="buttonStyling"
+    (click)="highlightToggle()">HighLight div</button>
+<button (click)="errorToggle()">Error div</button>
