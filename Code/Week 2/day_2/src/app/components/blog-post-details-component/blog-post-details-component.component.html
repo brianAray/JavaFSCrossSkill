@@ -1,0 +1,6 @@
+<div *ngIf="selectedPost">
+    <h3>{{selectedPost.author}}</h3>
+    <br>
+    <p>{{selectedPost.details}}</p>
+    <button (click)="closePostEvent()">Close Post</button>
+</div>

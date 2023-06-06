@@ -1,0 +1,7 @@
+<ul>
+    <li (click)="selectPost(post)" *ngFor="let post of blogPosts">
+        Post: {{post.id}} by {{post.author}}
+    </li>
+</ul>
+
+<app-blog-post-details-component [selectedPost]="selectedPost" (closeEvent)="closePost($event)"></app-blog-post-details-component>
