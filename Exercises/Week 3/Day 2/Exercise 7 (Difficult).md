@@ -1,0 +1,3 @@
+# Exercise 7 (Difficult)
+## Task
+Create a parent component called `DashboardComponent` and multiple child components (e.g., `CardComponent`, `ListComponent`). In the parent component, define a state object that holds data for the dashboard. Pass relevant portions of the state to the child components using `@Input` and display the data in their respective templates. Implement various interactions between child components, such as filtering or sorting the data, and update the state accordingly.

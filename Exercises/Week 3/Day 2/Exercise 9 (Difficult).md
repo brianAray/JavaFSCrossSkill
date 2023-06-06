@@ -1,0 +1,3 @@
+# Exercise 9 (Difficult)
+## Task
+Create a parent component called `MasterComponent` and multiple child components (e.g., `DetailComponent`, `SidebarComponent`). Implement a master-detail view, where the parent component holds the master data and passes selected detail data to the child components using `@Input`. Allow interactions in the child components to modify the selected detail data and update the parent's state accordingly.
