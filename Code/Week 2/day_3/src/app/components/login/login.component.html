@@ -3,3 +3,27 @@
     <input type="password" [(ngModel)]="loginForm.password" name="password" placeholder="Password" required>
     <button type="submit">Login</button>
 </form>
+
+
+<button (click)="getData()">Get Data</button>
+
+<div *ngIf="data">
+    <pre>{{data | json}}</pre>
+</div>
+
+<form (ngSubmit)="onSubmitPost()">
+    <input type="text" [(ngModel)]="postForm.title" name="title" placeholder="Title" required>
+    <input type="text" [(ngModel)]="postForm.body" name="body" placeholder="Body" required>
+    <input type="number" [(ngModel)]="postForm.userId" name="userId" placeholder="0" required>
+    <button type="submit">Post</button>
+</form>
+
+<button (click)="putData()">Put Data</button>
+
+<div>
+    <input type="number" [(ngModel)]="deletePostId" placeholder="0" required>
+    <button (click)="deleteData()">Delete Data</button>
+</div>
+
+
+
