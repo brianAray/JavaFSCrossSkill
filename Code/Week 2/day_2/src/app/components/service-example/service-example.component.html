@@ -1,0 +1,10 @@
+<button (click)="logMessage()">Log Message</button>
+
+<input [(ngModel)]="message">
+
+<ul>
+    <li *ngFor="let user of users">{{user}}</li>
+</ul>
+
+<input [(ngModel)]="newUser" placeholder="New User">
+<button (click)="addUser()">Add User</button>
