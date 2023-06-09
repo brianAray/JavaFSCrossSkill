@@ -16,12 +16,12 @@ import java.util.Optional;
 public class SpringDataJpaApplication {
 
 	public static void main(String[] args) {
-//		SpringApplication.run(SpringDataJpaApplication.class, args);
+		SpringApplication.run(SpringDataJpaApplication.class, args);
 
-		ConfigurableApplicationContext context = SpringApplication.run(SpringDataJpaApplication.class, args);
-
-		UserService userService = context.getBean(UserService.class);
-		OrderService orderService = context.getBean(OrderService.class);
+//		ConfigurableApplicationContext context = SpringApplication.run(SpringDataJpaApplication.class, args);
+//
+//		UserService userService = context.getBean(UserService.class);
+//		OrderService orderService = context.getBean(OrderService.class);
 
 		// create a new user
 //		User user = new User();
@@ -34,25 +34,25 @@ public class SpringDataJpaApplication {
 //
 //		// retrieve a user by ID
 //		Long userId = user.getId();
-		Optional<User> retrievedUser = userService.getUserById(1L);
-		retrievedUser.ifPresent(System.out::println);
-
-		// create a new order
-		Order order = new Order();
-		order.setUser(retrievedUser.get());
-		order.setDescription("Cheese Burger");
-
-		// save order
-		orderService.saveOrder(order);
-
-		// retrieve by name
-		List<User> usersByName = userService.findByName("John Doe");
-		usersByName.forEach(System.out::println);
-
-
-		// get all orders
-		List<Order> allOrders = orderService.getAllOrders();
-		allOrders.forEach(System.out::println);
+//		Optional<User> retrievedUser = userService.getUserById(1L);
+//		retrievedUser.ifPresent(System.out::println);
+//
+//		// create a new order
+//		Order order = new Order();
+//		order.setUser(retrievedUser.get());
+//		order.setDescription("Cheese Burger");
+//
+//		// save order
+//		orderService.saveOrder(order);
+//
+//		// retrieve by name
+//		List<User> usersByName = userService.findByName("John Doe");
+//		usersByName.forEach(System.out::println);
+//
+//
+//		// get all orders
+//		List<Order> allOrders = orderService.getAllOrders();
+//		allOrders.forEach(System.out::println);
 
 
 		// Get all users

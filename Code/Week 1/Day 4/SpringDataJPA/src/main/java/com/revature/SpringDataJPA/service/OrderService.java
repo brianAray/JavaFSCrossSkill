@@ -1,5 +1,6 @@
 package com.revature.SpringDataJPA.service;
 
+import com.revature.SpringDataJPA.dto.OrderDTO;
 import com.revature.SpringDataJPA.entity.Order;
 import com.revature.SpringDataJPA.entity.User;
 import com.revature.SpringDataJPA.repository.OrderRepository;
@@ -15,11 +16,24 @@ public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
+    @Autowired
+    private UserService userService;
+
     // crud
 
     // save order entity
-    public Order saveOrder(Order order){
-        return orderRepository.save(order);
+    public Order saveOrder(OrderDTO order){
+        // user entity
+        Optional<User> userOptional = userService.getUserById(order.getUserId());
+
+        if(userOptional.isPresent()){
+            Order orderToBeSaved = new Order();
+            orderToBeSaved.setUser(userOptional.get());
+            orderToBeSaved.setDescription(order.getDescription());
+            return orderRepository.save(orderToBeSaved);
+        }else{
+            return null;
+        }
     }
 
     // Get by id
@@ -35,5 +49,9 @@ public class OrderService {
     // delete user
     public void deleteOrder(Long id){
         orderRepository.deleteById(id);
+    }
+
+    public List<Order> getOrderByUserId(Long userId){
+        return orderRepository.findAllByUserId(userId);
     }
 }

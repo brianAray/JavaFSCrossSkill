@@ -1,5 +1,6 @@
 package com.revature.SpringDataJPA.service;
 
+import com.revature.SpringDataJPA.dto.UserDTO;
 import com.revature.SpringDataJPA.entity.User;
 import com.revature.SpringDataJPA.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,11 @@ public class UserService {
     // crud
 
     // save user entity
-    public User saveUser(User user){
-        return userRepository.save(user);
+    public User saveUser(UserDTO user){
+        User userToBeCreated = new User();
+        userToBeCreated.setName(user.getName());
+        userToBeCreated.setEmail(user.getEmail());
+        return userRepository.save(userToBeCreated);
     }
 
     // Get by id
