@@ -1,0 +1,8 @@
+<ul>
+    <li (click)="selectUser(user)" *ngFor="let user of users">{{user.name}}</li>
+</ul>
+
+<div *ngIf="selectedUser">
+    <app-user [selectedUser]="selectedUser"></app-user>
+    <app-order-list [selectedUser]="selectedUser"></app-order-list>
+</div>

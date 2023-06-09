@@ -1,0 +1,41 @@
+<!-- <div>
+    <h2>User Id Search</h2>
+    <input type="number" [(ngModel)]="userId">
+    <button (click)="getUserById()">Get User By Id</button>
+</div>
+
+<br>
+<div>
+    <h2>All users</h2>
+    <button (click)="getAllUsers()">Get All Users</button>
+</div>
+<br>
+
+<form (ngSubmit)="saveUser()">
+    <input type="text" [(ngModel)]="userForm.name" name="name" placeholder="Name" required>
+    <input type="email" [(ngModel)]="userForm.email" name="email" placeholder="Email" required>
+    <button type="submit">Create User</button>
+</form>
+
+<br>
+
+<div>
+    <h2>Order Id Search</h2>
+    <input type="number" [(ngModel)]="orderId">
+    <button (click)="getOrderById()">Get Order By Id</button>
+</div>
+
+<br>
+<div>
+    <h2>All Orders</h2>
+    <button (click)="getAllOrders()">Get All Orders</button>
+</div>
+
+<br>
+<form (ngSubmit)="saveOrder()">
+    <input type="number" [(ngModel)]="orderForm.id" name="id" placeholder="0" required>
+    <input type="text" [(ngModel)]="orderForm.description" name="description" placeholder="Description" required>
+    <button type="submit">Create Order</button>
+</form> -->
+
+<app-user-list [users]="users"></app-user-list>
